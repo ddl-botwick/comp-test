@@ -1,4 +1,5 @@
 import pandas as pd
-df = pd.DataFrame([[1,2,3]], columns = ['d', 'e', 'f'])
+import datetime
+df = pd.DataFrame([["time","is", datetime.datetime.now()]], columns = ['a', 'b', 'c'])
 print(df)
 df.to_csv('/mnt/artifacts/fileInArtifacts.csv')
